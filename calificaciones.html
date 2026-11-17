@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de evaluación de calificaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="calificaciones.css">
+</head>
+<body>
+    <header><img src="fondo.jpg"></header>
+    
+    <nav>    
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="#">Conoceme</a>
+                <ul>
+                    <li><a href="informacion.html">Informacion personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercera Parcial</a>
+                <ul>
+                    <li><a href="#">Práctica uno</a></li>
+                    <li><a href="calificaciones.html">Sistema de calificaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside class="principal">
+            <h2>Sistema de evaluación de calificaciones</h2>
+            
+            <form id="formCalificaciones" class="formulario-calif">
+                <div class="campo">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" placeholder="Ingresa el nombre completo">
+                </div>
+
+                <div class="campo">
+                    <label for="cal1">Primera calificación (0 - 10):</label>
+                    <input type="number" id="cal1" step="0.1" min="0" max="10" placeholder="Ej. 8.5">
+                </div>
+
+                <div class="campo">
+                    <label for="cal2">Segunda calificación (0 - 10):</label>
+                    <input type="number" id="cal2" step="0.1" min="0" max="10" placeholder="Ej. 9.0">
+                </div>
+
+                <div class="campo">
+                    <label for="cal3">Tercera calificación (0 - 10):</label>
+                    <input type="number" id="cal3" step="0.1" min="0" max="10" placeholder="Ej. 7.5">
+                </div>
+
+                <button type="button" id="btnCalcular" class="btn-calcular">Calcular promedio</button>
+            </form>
+
+            <!-- Espacio para mostrar los resultados -->
+            <div id="resultados" class="caja-resultados"></div>
+        </aside>
+        
+        <aside class="secundario">
+            <h2>Escala de Evaluación</h2>
+            <p><strong>9 a 10:</strong> Excelente desempeño</p>
+            <p><strong>8 a 8.9:</strong> Muy buen desempeño</p>
+            <p><strong>7 a 7.9:</strong> Buen desempeño</p>
+            <p><strong>6 a 6.9:</strong> Desempeño suficiente</p>
+            <p><strong>Menor que 6:</strong> Necesita mejorar (Reprobado)</p>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logobachi.png">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programacion en Internet I</p>
+        </div>
+    </footer>
+
+    <script src="calificaciones.js"></script>
+</body>
+</html>
